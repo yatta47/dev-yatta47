@@ -47,5 +47,23 @@
     </div>
 
     {% include analytics.html %}
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/jquery.countdown.js"></script>
+    <script>
+    window.jQuery(function ($) {
+        "use strict";
+
+        $('time').countDown({
+            with_separators: false
+        });
+        $('.alt-1').countDown({
+            css_class: 'countdown-alt-1'
+        });
+        $('.alt-2').countDown({
+            css_class: 'countdown-alt-2'
+        });
+
+    });
+    </script>
   </body>
 </html>
